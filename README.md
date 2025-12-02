@@ -50,6 +50,9 @@ This student project builds a small but production‑minded Python app that list
 - [ ] Wire up lint/format hooks via `pre-commit`.
 - [ ] Add MongoDB storage implementation (Motor/PyMongo) once the JSONL flow is validated.
 
+## First milestone: user stories and scenarios
+See `docs/product/backlog/m1-message-capture.md` for the user stories, rules, and example mappings. Executable Gherkin scenarios live under `features/` (one feature file per story).
+
 ## Next topics to practice after the MVP
 - Replace polling with webhooks + simple FastAPI endpoint.
 - Swap JSONL for MongoDB + repository interfaces (with change streams for live tails if desired).
