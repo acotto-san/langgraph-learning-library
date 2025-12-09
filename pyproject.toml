@@ -1,0 +1,43 @@
+[project]
+name = "langgraph-learning-library"
+version = "0.1.0"
+description = "Telegram message capture exercises for the LangGraph learning library."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Student" }]
+dependencies = [
+  "python-telegram-bot>=21.4,<22.0",
+  "pydantic>=2.7.0",
+  "pydantic-settings>=2.2.1",
+  "ruff>=0.14.7",
+  "black>=25.11.0",
+  "mypy>=1.19.0",
+  "pytest>=9.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.0",
+  "ruff>=0.4.0",
+  "mypy>=1.9.0",
+  "black>=24.3.0",
+]
+
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+warn_unused_configs = true
+
+[tool.pyright]
+include = ["src"]
+pythonVersion = "3.11"

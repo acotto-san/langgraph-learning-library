@@ -1,0 +1,13 @@
+python-telegram-bot<22.0,>=21.4
+pydantic>=2.7.0
+pydantic-settings>=2.2.1
+ruff>=0.14.7
+black>=25.11.0
+mypy>=1.19.0
+pytest>=9.0.1
+
+[dev]
+pytest>=8.2.0
+ruff>=0.4.0
+mypy>=1.9.0
+black>=24.3.0

@@ -1,3 +1,23 @@
+Metadata-Version: 2.4
+Name: langgraph-learning-library
+Version: 0.1.0
+Summary: Telegram message capture exercises for the LangGraph learning library.
+Author: Student
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: python-telegram-bot<22.0,>=21.4
+Requires-Dist: pydantic>=2.7.0
+Requires-Dist: pydantic-settings>=2.2.1
+Requires-Dist: ruff>=0.14.7
+Requires-Dist: black>=25.11.0
+Requires-Dist: mypy>=1.19.0
+Requires-Dist: pytest>=9.0.1
+Provides-Extra: dev
+Requires-Dist: pytest>=8.2.0; extra == "dev"
+Requires-Dist: ruff>=0.4.0; extra == "dev"
+Requires-Dist: mypy>=1.9.0; extra == "dev"
+Requires-Dist: black>=24.3.0; extra == "dev"
+
 # LangGraph Learning Library
 
 This student project builds a small but production‑minded Python app that listens to a Telegram bot and captures the messages users send. Each milestone introduces a new practice (typing, testing, env management, observability) to keep the codebase tidy as it grows.
